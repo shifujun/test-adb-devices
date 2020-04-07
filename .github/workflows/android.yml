@@ -21,7 +21,7 @@ jobs:
           target: default
           arch: x86_64
           profile: pixel_xl
-          script: ./gradlew androidTestSdk
+          script: adb devices -l 
 
       # 打印出adb已连接的Android设备
       - name: adb devices -l 
